@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2020-12-25 11:57+0900
+" Modified:   2021-09-26 15:25+0200
 " License:    MIT
 
 
@@ -113,6 +113,8 @@ if &background == 'light'
   hi SyntasticStyleWarningSign ctermbg=253 ctermfg=130 guibg=#dcdfe7 guifg=#c57339
   hi SyntasticWarningSign ctermbg=253 ctermfg=130 guibg=#dcdfe7 guifg=#c57339
   hi ZenSpace ctermbg=125 guibg=#cc517a
+  hi NormalFloat guifg=#33374c
+  hi FloatBorder guibg=#e8e9ec guifg=#2d539e
   hi icebergALAccentRed ctermfg=125 guifg=#cc517a
 
   if has('nvim')
@@ -228,6 +230,8 @@ else
   hi SyntasticStyleWarningSign ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
   hi SyntasticWarningSign ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
   hi ZenSpace ctermbg=203 guibg=#e27878
+  hi NormalFloat guifg=#c6c8d1
+  hi FloatBorder guibg=#161821 guifg=#84a0c6
   hi icebergALAccentRed ctermfg=203 guifg=#e27878
 
   if has('nvim')
@@ -371,6 +375,14 @@ hi! link typescriptIdentifier Statement
 hi! link typescriptMessage Normal
 hi! link typescriptNull Constant
 hi! link typescriptParens Normal
+hi! link LspDiagnosticsDefaultError ALEVirtualTextError
+hi! link LspDiagnosticsDefaultWarning ALEVirtualTextWarning
+hi! link LspDiagnosticsDefaultInformation ALEVirtualTextWarning
+hi! link LspDiagnosticsDefaultHint ALEVirtualTextWarning
+hi! link LspDiagnosticsSignError ALEErrorSign
+hi! link LspDiagnosticsSignWarning ALEWarningSign
+hi! link LspDiagnosticsSignInformation ALEWarningSign
+hi! link LspDiagnosticsSignHint ALEWarningSign
 
 if !has('nvim')
   hi! link SpecialKey Whitespace
