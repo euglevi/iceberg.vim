@@ -300,7 +300,7 @@ function! s:create_colors(palette) abort
         \   'ctermfg': c.statusline_bg,
         \   'gui': 'reverse',
         \   'guibg': g.normal_bg,
-        \   'guifg': g.normal_fg,
+        \   'guifg': g.normal_bg,
         \   'term': 'reverse',
         \ }))
   call extend(rules, pgmnt#hi#group(
