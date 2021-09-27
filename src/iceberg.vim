@@ -299,8 +299,8 @@ function! s:create_colors(palette) abort
         \   'ctermbg': c.statusline_fg,
         \   'ctermfg': c.statusline_bg,
         \   'gui': 'reverse',
-        \   'guibg': g.statusline_fg,
-        \   'guifg': g.statusline_bg,
+        \   'guibg': g.normal_bg,
+        \   'guifg': g.normal_fg,
         \   'term': 'reverse',
         \ }))
   call extend(rules, pgmnt#hi#group(
@@ -582,6 +582,19 @@ function! s:create_colors(palette) abort
         \   'ctermfg': c.red,
         \   'guifg': g.red,
         \ }))
+  " }}}
+
+  " [Neovim built-in LSP](https://neovim.io/doc/user/lsp.html)
+  for [key, value] in items({'Error': 'red', 'Warning': 'orange', 'Information': 'orange', 'Hint': 'orange'})
+    call extend(rules, pgmnt#hi#group(
+          \ 'LspDiagnosticsUnderline'..key, {
+          \   'cterm': 'underline',
+          \   'gui': 'underline',
+          \   'term': 'underline',
+          \   'ctermfg': eval('c.'..value),
+          \   'guifg': eval('g.'.value),
+          \ }))
+  endfor
   " }}}
 
   let quoted_term_colors = map(
@@ -919,17 +932,5 @@ call pgmnt#compile(
       \ })
 
 
-" [Neovim built-in LSP](https://neovim.io/doc/user/lsp.html)
-  for [key, value] in items({'Error': 'red', 'Warning': 'orange', 'Information': 'orange', 'Hint': 'orange'})
-    call extend(rules, pgmnt#hi#group(
-          \ 'LspDiagnosticsUnderline'..key, {
-          \   'cterm': 'underline',
-          \   'gui': 'underline',
-          \   'term': 'underline',
-          \   'ctermfg': eval('c.'..value),
-          \   'guifg': eval('g.'.value),
-          \ }))
-  endfor
-  " }}}
 
 
