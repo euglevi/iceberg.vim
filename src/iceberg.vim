@@ -820,6 +820,11 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('LspDiagnosticsSignInformation','ALEWarningSign'))
   call add(links, pgmnt#hi#link('LspDiagnosticsSignHint','ALEWarningSign'))
 
+" Nvim-cmp custom menu
+  call add(links, pgmnt#hi#link('CmpItemAbbrDefault', 'Delimiter'))
+  call add(links, pgmnt#hi#link('CmpItemAbbrDeprecatedDefault', 'Delimiter'))
+
+
   return links
 endfunction
 

@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-09-28 09:49+0200
+" Modified:   2021-09-28 22:01+0200
 " License:    MIT
 
 
@@ -394,6 +394,8 @@ hi! link LspDiagnosticsSignError ALEErrorSign
 hi! link LspDiagnosticsSignWarning ALEWarningSign
 hi! link LspDiagnosticsSignInformation ALEWarningSign
 hi! link LspDiagnosticsSignHint ALEWarningSign
+hi! link CmpItemAbbrDefault Delimiter
+hi! link CmpItemAbbrDeprecatedDefault Delimiter
 
 if !has('nvim')
   hi! link SpecialKey Whitespace
