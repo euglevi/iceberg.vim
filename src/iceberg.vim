@@ -451,18 +451,11 @@ function! s:create_colors(palette) abort
   " Rules for plugins {{{
   " [Lightspeed](https://github.com/ggandor/lightspeed.nvim)
   call extend(rules, pgmnt#hi#group(
-        \ 'LightspeedLabel', {
+        \ 'LightspeedOneCharMatch', {
         \   'ctermbg': c.orange,
         \   'ctermfg': c.orange,
         \   'guibg': g.orange,
         \   'guifg': g.orange,
-        \ }))
-  call extend(rules, pgmnt#hi#group(
-        \ 'LightspeedLabelOverlapped', {
-        \   'ctermbg': c.red,
-        \   'ctermfg': c.red,
-        \   'guibg': g.red,
-        \   'guifg': g.red,
         \ }))
   " [ALE](https://github.com/w0rp/ale)
   call extend(rules, pgmnt#hi#group(
