@@ -418,6 +418,20 @@ function! s:create_colors(palette) abort
         \   'guibg': g.wildmenu_bg,
         \   'guifg': g.wildmenu_fg,
         \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ 'TermCursor', {
+        \   'ctermfg': c.purple,
+        \   'guifg': g.purple,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+	\  'NormalFloat', {
+        \     'guifg': g.normal_fg,
+	\ } ))
+  call extend(rules, pgmnt#hi#group(
+	\  'FloatBorder', {
+	\     'guibg': g.normal_bg,
+        \     'guifg': g.blue,
+	\ }))
   " }}}
 
   " Rules for filetypes {{{
@@ -435,6 +449,14 @@ function! s:create_colors(palette) abort
   " }}}
 
   " Rules for plugins {{{
+  " [Lightspeed](https://github.com/ggandor/lightspeed.nvim)
+  call extend(rules, pgmnt#hi#group(
+        \ 'LightspeedShortcut', {
+        \   'ctermbg': c.orange,
+        \   'ctermfg': c.orange,
+        \   'guibg': g.orange,
+        \   'guifg': g.orange,
+        \ }))
   " [ALE](https://github.com/w0rp/ale)
   call extend(rules, pgmnt#hi#group(
         \ 'ALEErrorSign', {
@@ -565,17 +587,6 @@ function! s:create_colors(palette) abort
         \   'guibg': g.red,
         \ }))
   " }}}
-  " [float]
-  call extend(rules, pgmnt#hi#group(
-	\  'NormalFloat', {
-        \     'guifg': g.normal_fg,
-	\ } ))
-  call extend(rules, pgmnt#hi#group(
-	\  'FloatBorder', {
-	\     'guibg': g.normal_bg,
-        \     'guifg': g.blue,
-	\ }))
-
   " Palettes for statusline plugins {{{
   call extend(rules, pgmnt#hi#group(
         \ 'icebergALAccentRed', {
@@ -619,7 +630,6 @@ endfunction
 function! s:create_links() abort
   let links = []
 
-  call add(links, pgmnt#hi#link('TermCursor', 'Cursor'))
   call add(links, pgmnt#hi#link('ToolbarButton', 'TabLineSel'))
   call add(links, pgmnt#hi#link('ToolbarLine', 'TabLineFill'))
 
