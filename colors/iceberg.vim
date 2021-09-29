@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-09-28 22:01+0200
+" Modified:   2021-09-29 22:07+0200
 " License:    MIT
 
 
@@ -89,12 +89,11 @@ if &background == 'light'
   hi Visual ctermbg=251 ctermfg=NONE guibg=#c9cdd7 guifg=NONE
   hi VisualNOS ctermbg=251 ctermfg=NONE guibg=#c9cdd7 guifg=NONE
   hi WildMenu ctermbg=235 ctermfg=252 guibg=#32364c guifg=#e8e9ec
-  hi TermCursor ctermfg=97 guifg=#7759b4
+  hi TermCursor ctermfg=125 guifg=#cc517a
   hi NormalFloat guifg=#33374c
   hi FloatBorder guibg=#e8e9ec guifg=#2d539e
   hi diffAdded ctermfg=64 guifg=#668e3d
   hi diffRemoved ctermfg=125 guifg=#cc517a
-  hi LightspeedOneCharMatch ctermbg=130 ctermfg=130 guibg=#c57339 guifg=#c57339
   hi ALEErrorSign ctermbg=253 ctermfg=125 guibg=#dcdfe7 guifg=#cc517a
   hi ALEWarningSign ctermbg=253 ctermfg=130 guibg=#dcdfe7 guifg=#c57339
   hi ALEVirtualTextError ctermfg=125 guifg=#cc517a
@@ -212,12 +211,11 @@ else
   hi Visual ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
   hi VisualNOS ctermbg=236 ctermfg=NONE guibg=#272c42 guifg=NONE
   hi WildMenu ctermbg=255 ctermfg=234 guibg=#d4d5db guifg=#17171b
-  hi TermCursor ctermfg=140 guifg=#a093c7
+  hi TermCursor ctermfg=203 guifg=#e27878
   hi NormalFloat guifg=#c6c8d1
   hi FloatBorder guibg=#161821 guifg=#84a0c6
   hi diffAdded ctermfg=150 guifg=#b4be82
   hi diffRemoved ctermfg=203 guifg=#e27878
-  hi LightspeedOneCharMatch ctermbg=216 ctermfg=216 guibg=#e2a478 guifg=#e2a478
   hi ALEErrorSign ctermbg=235 ctermfg=203 guibg=#1e2132 guifg=#e27878
   hi ALEWarningSign ctermbg=235 ctermfg=216 guibg=#1e2132 guifg=#e2a478
   hi ALEVirtualTextError ctermfg=203 guifg=#e27878

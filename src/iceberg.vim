@@ -420,8 +420,8 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'TermCursor', {
-        \   'ctermfg': c.purple,
-        \   'guifg': g.purple,
+        \   'ctermfg': c.red,
+        \   'guifg': g.red,
         \ }))
   call extend(rules, pgmnt#hi#group(
 	\  'NormalFloat', {
@@ -449,14 +449,6 @@ function! s:create_colors(palette) abort
   " }}}
 
   " Rules for plugins {{{
-  " [Lightspeed](https://github.com/ggandor/lightspeed.nvim)
-  call extend(rules, pgmnt#hi#group(
-        \ 'LightspeedOneCharMatch', {
-        \   'ctermbg': c.orange,
-        \   'ctermfg': c.orange,
-        \   'guibg': g.orange,
-        \   'guifg': g.orange,
-        \ }))
   " [ALE](https://github.com/w0rp/ale)
   call extend(rules, pgmnt#hi#group(
         \ 'ALEErrorSign', {
