@@ -420,8 +420,8 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'TermCursor', {
-        \   'ctermfg': c.red,
-        \   'guifg': g.red,
+        \   'ctermfg': c.orange,
+        \   'guifg': g.orange,
         \ }))
   call extend(rules, pgmnt#hi#group(
 	\  'NormalFloat', {
