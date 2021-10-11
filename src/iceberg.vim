@@ -815,6 +815,10 @@ function! s:create_links() abort
 " Nvim-cmp custom menu
   call add(links, pgmnt#hi#link('CmpItemAbbrDefault', 'Delimiter'))
   call add(links, pgmnt#hi#link('CmpItemAbbrDeprecatedDefault', 'Delimiter'))
+  call add(links, pgmnt#hi#link('CmpItemAbbrMatchDefault', 'Normal'))
+  call add(links, pgmnt#hi#link('CmpItemAbbrMatchFuzzyDefault', 'Normal'))
+  call add(links, pgmnt#hi#link('CmpItemKindDefault', 'Special'))
+  call add(links, pgmnt#hi#link('CmpItemMenuDefault', 'Identifier'))
 
 
   return links
