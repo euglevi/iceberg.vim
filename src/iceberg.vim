@@ -30,6 +30,7 @@ function! s:create_colors(palette) abort
         \ 'Comment', {
         \   'ctermfg': c.comment_fg,
         \   'guifg': g.comment_fg,
+	\   'gui': 'italic',
         \ }))
   call extend(rules, pgmnt#hi#group(
         \ 'Conceal', {
