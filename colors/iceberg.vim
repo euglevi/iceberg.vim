@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-03 21:39+0100
+" Modified:   2021-11-03 22:05+0100
 " License:    MIT
 
 
@@ -122,7 +122,6 @@ if &background == 'light'
   hi LspDiagnosticsUnderlineWarning cterm=underline ctermfg=130 gui=underline guifg=#c57339 term=underline
   hi LspDiagnosticsUnderlineError cterm=underline ctermfg=125 gui=underline guifg=#cc517a term=underline
   hi TSAnnotation guibg=#e8e9ec guifg=#33374c
-  hi TSAttribute guibg=#e8e9ec guifg=#33374c
   hi TSCharacter guibg=#e8e9ec guifg=#33374c
   hi TSConstMacro guibg=#e8e9ec guifg=#33374c
   hi TSConstant guibg=#e8e9ec guifg=#33374c
@@ -135,8 +134,6 @@ if &background == 'light'
   hi TSLiteral guibg=#e8e9ec guifg=#33374c
   hi TSNamespace guibg=#e8e9ec guifg=#33374c
   hi TSNone guibg=#e8e9ec guifg=#33374c
-  hi TSParameter guibg=#e8e9ec guifg=#33374c
-  hi TSParameterReference guibg=#e8e9ec guifg=#33374c
   hi TSPunctDelimiter guibg=#e8e9ec guifg=#33374c
   hi TSPunctSpecial guibg=#e8e9ec guifg=#33374c
   hi TSRepeat guibg=#e8e9ec guifg=#33374c
@@ -147,7 +144,6 @@ if &background == 'light'
   hi TSTypeBuiltIn guibg=#e8e9ec guifg=#33374c
   hi TSURI guibg=#e8e9ec guifg=#33374c
   hi TSUnderline guibg=#e8e9ec guifg=#33374c
-  hi TSVariable guibg=#e8e9ec guifg=#33374c
   hi TSBoolean guibg=#e8e9ec guifg=#c57339
   hi TSConstructor guibg=#e8e9ec guifg=#c57339
   hi TSNumber guibg=#e8e9ec guifg=#c57339
@@ -161,12 +157,16 @@ if &background == 'light'
   hi TSConstBuiltin guibg=#e8e9ec guifg=#2d539e
   hi TSInclude guibg=#e8e9ec guifg=#2d539e
   hi TSKeyword guibg=#e8e9ec guifg=#2d539e
+  hi TSParameter guibg=#e8e9ec guifg=#2d539e
+  hi TSParameterReference guibg=#e8e9ec guifg=#2d539e
+  hi TSVariable guibg=#e8e9ec guifg=#2d539e
   hi TSException gui=bold guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordOperator gui=bold guibg=#e8e9ec guifg=#2d539e
   hi TSString guibg=#e8e9ec guifg=#668e3d
   hi TSProperty guibg=#e8e9ec guifg=#7759b4
   hi TSTag guibg=#e8e9ec guifg=#7759b4
   hi TSVariableBuiltin guibg=#e8e9ec guifg=#7759b4
+  hi TSAttribute guibg=#e8e9ec guifg=#7759b4
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -290,7 +290,6 @@ else
   hi LspDiagnosticsUnderlineWarning cterm=underline ctermfg=216 gui=underline guifg=#e2a478 term=underline
   hi LspDiagnosticsUnderlineError cterm=underline ctermfg=203 gui=underline guifg=#e27878 term=underline
   hi TSAnnotation guibg=#161821 guifg=#c6c8d1
-  hi TSAttribute guibg=#161821 guifg=#c6c8d1
   hi TSCharacter guibg=#161821 guifg=#c6c8d1
   hi TSConstMacro guibg=#161821 guifg=#c6c8d1
   hi TSConstant guibg=#161821 guifg=#c6c8d1
@@ -303,8 +302,6 @@ else
   hi TSLiteral guibg=#161821 guifg=#c6c8d1
   hi TSNamespace guibg=#161821 guifg=#c6c8d1
   hi TSNone guibg=#161821 guifg=#c6c8d1
-  hi TSParameter guibg=#161821 guifg=#c6c8d1
-  hi TSParameterReference guibg=#161821 guifg=#c6c8d1
   hi TSPunctDelimiter guibg=#161821 guifg=#c6c8d1
   hi TSPunctSpecial guibg=#161821 guifg=#c6c8d1
   hi TSRepeat guibg=#161821 guifg=#c6c8d1
@@ -315,7 +312,6 @@ else
   hi TSTypeBuiltIn guibg=#161821 guifg=#c6c8d1
   hi TSURI guibg=#161821 guifg=#c6c8d1
   hi TSUnderline guibg=#161821 guifg=#c6c8d1
-  hi TSVariable guibg=#161821 guifg=#c6c8d1
   hi TSBoolean guibg=#161821 guifg=#e2a478
   hi TSConstructor guibg=#161821 guifg=#e2a478
   hi TSNumber guibg=#161821 guifg=#e2a478
@@ -329,12 +325,16 @@ else
   hi TSConstBuiltin guibg=#161821 guifg=#84a0c6
   hi TSInclude guibg=#161821 guifg=#84a0c6
   hi TSKeyword guibg=#161821 guifg=#84a0c6
+  hi TSParameter guibg=#161821 guifg=#84a0c6
+  hi TSParameterReference guibg=#161821 guifg=#84a0c6
+  hi TSVariable guibg=#161821 guifg=#84a0c6
   hi TSException gui=bold guibg=#161821 guifg=#84a0c6
   hi TSKeywordOperator gui=bold guibg=#161821 guifg=#84a0c6
   hi TSString guibg=#161821 guifg=#b4be82
   hi TSProperty guibg=#161821 guifg=#a093c7
   hi TSTag guibg=#161821 guifg=#a093c7
   hi TSVariableBuiltin guibg=#161821 guifg=#a093c7
+  hi TSAttribute guibg=#161821 guifg=#a093c7
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'
