@@ -601,6 +601,46 @@ function! s:create_colors(palette) abort
   endfor
   " }}}
 
+  " Treesitter
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSAnnotation', 'TSAttribute', 'TSCharacter', 'TSConstMacro', 'TSConstant', 'TSEmphasis', 'TSError', 'TSField', 'TSFloat', 'TSFuncMacro', 'TSLabel', 'TSLiteral', 'TSNamespace', 'TSNone', 'TSParameter', 'TSParameterReference', 'TSPunctDelimiter', 'TSPunctSpecial', 'TSRepeat', 'TSStringRegex', 'TSStrong', 'TSStructure', 'TSText', 'TSTypeBuiltIn', 'TSURI', 'TSUnderline', 'TSVariable'], {
+        \   'guifg': g.normal_fg,
+        \   'guibg': g.normal_bg,
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+	\ ['TSBoolean', 'TSConstructor', 'TSNumber', 'TSOperator', 'TSType'], {
+	\   'guifg': g.orange,
+	\   'guibg': g.normal_bg,
+	\ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSConditional', 'TSFuncBuiltin', 'TSStringEscape' ,'TSFunction', 'TSMethod'], {
+	\   'guifg': g.lblue,
+	\   'guibg': g.normal_bg,
+	\ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSConstBuiltin', 'TSInclude', 'TSKeyword'], {
+	\   'guifg': g.blue,
+	\   'guibg': g.normal_bg,
+	\ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSException', 'TSKeywordOperator' ], {
+	\   'guifg': g.blue,
+	\   'guibg': g.normal_bg,
+	\   'gui': 'bold',
+	\ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSString'], {
+	\   'guifg': g.green,
+	\   'guibg': g.normal_bg,
+	\ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSProperty', 'TSTag', 'TSVariableBuiltin'], {
+	\   'guifg': g.purple,
+	\   'guibg': g.normal_bg,
+	\ }))
+  " }}}
+
+
   let quoted_term_colors = map(
         \ copy(g.term_colors),
         \ '"''" . v:val . "''"')
@@ -818,6 +858,10 @@ function! s:create_links() abort
   call add(links, pgmnt#hi#link('CmpItemAbbrDeprecatedDefault', 'Delimiter'))
   call add(links, pgmnt#hi#link('CmpItemKindDefault', 'Special'))
   call add(links, pgmnt#hi#link('CmpItemMenuDefault', 'Identifier'))
+
+" Treesitter
+  call add(links, pgmnt#hi#link('TSComment', 'Comment'))
+  call add(links, pgmnt#hi#link('TSTagDelimiter', 'Comment'))
 
 
   return links
