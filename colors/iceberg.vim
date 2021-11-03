@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-03 22:05+0100
+" Modified:   2021-11-03 22:08+0100
 " License:    MIT
 
 
@@ -124,11 +124,8 @@ if &background == 'light'
   hi TSAnnotation guibg=#e8e9ec guifg=#33374c
   hi TSCharacter guibg=#e8e9ec guifg=#33374c
   hi TSConstMacro guibg=#e8e9ec guifg=#33374c
-  hi TSConstant guibg=#e8e9ec guifg=#33374c
   hi TSEmphasis guibg=#e8e9ec guifg=#33374c
   hi TSError guibg=#e8e9ec guifg=#33374c
-  hi TSField guibg=#e8e9ec guifg=#33374c
-  hi TSFloat guibg=#e8e9ec guifg=#33374c
   hi TSFuncMacro guibg=#e8e9ec guifg=#33374c
   hi TSLabel guibg=#e8e9ec guifg=#33374c
   hi TSLiteral guibg=#e8e9ec guifg=#33374c
@@ -144,6 +141,7 @@ if &background == 'light'
   hi TSTypeBuiltIn guibg=#e8e9ec guifg=#33374c
   hi TSURI guibg=#e8e9ec guifg=#33374c
   hi TSUnderline guibg=#e8e9ec guifg=#33374c
+  hi TSVariable guibg=#e8e9ec guifg=#33374c
   hi TSBoolean guibg=#e8e9ec guifg=#c57339
   hi TSConstructor guibg=#e8e9ec guifg=#c57339
   hi TSNumber guibg=#e8e9ec guifg=#c57339
@@ -159,7 +157,8 @@ if &background == 'light'
   hi TSKeyword guibg=#e8e9ec guifg=#2d539e
   hi TSParameter guibg=#e8e9ec guifg=#2d539e
   hi TSParameterReference guibg=#e8e9ec guifg=#2d539e
-  hi TSVariable guibg=#e8e9ec guifg=#2d539e
+  hi TSField guibg=#e8e9ec guifg=#2d539e
+  hi TSFloat guibg=#e8e9ec guifg=#2d539e
   hi TSException gui=bold guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordOperator gui=bold guibg=#e8e9ec guifg=#2d539e
   hi TSString guibg=#e8e9ec guifg=#668e3d
@@ -167,6 +166,7 @@ if &background == 'light'
   hi TSTag guibg=#e8e9ec guifg=#7759b4
   hi TSVariableBuiltin guibg=#e8e9ec guifg=#7759b4
   hi TSAttribute guibg=#e8e9ec guifg=#7759b4
+  hi TSConstant guibg=#e8e9ec guifg=#7759b4
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -292,11 +292,8 @@ else
   hi TSAnnotation guibg=#161821 guifg=#c6c8d1
   hi TSCharacter guibg=#161821 guifg=#c6c8d1
   hi TSConstMacro guibg=#161821 guifg=#c6c8d1
-  hi TSConstant guibg=#161821 guifg=#c6c8d1
   hi TSEmphasis guibg=#161821 guifg=#c6c8d1
   hi TSError guibg=#161821 guifg=#c6c8d1
-  hi TSField guibg=#161821 guifg=#c6c8d1
-  hi TSFloat guibg=#161821 guifg=#c6c8d1
   hi TSFuncMacro guibg=#161821 guifg=#c6c8d1
   hi TSLabel guibg=#161821 guifg=#c6c8d1
   hi TSLiteral guibg=#161821 guifg=#c6c8d1
@@ -312,6 +309,7 @@ else
   hi TSTypeBuiltIn guibg=#161821 guifg=#c6c8d1
   hi TSURI guibg=#161821 guifg=#c6c8d1
   hi TSUnderline guibg=#161821 guifg=#c6c8d1
+  hi TSVariable guibg=#161821 guifg=#c6c8d1
   hi TSBoolean guibg=#161821 guifg=#e2a478
   hi TSConstructor guibg=#161821 guifg=#e2a478
   hi TSNumber guibg=#161821 guifg=#e2a478
@@ -327,7 +325,8 @@ else
   hi TSKeyword guibg=#161821 guifg=#84a0c6
   hi TSParameter guibg=#161821 guifg=#84a0c6
   hi TSParameterReference guibg=#161821 guifg=#84a0c6
-  hi TSVariable guibg=#161821 guifg=#84a0c6
+  hi TSField guibg=#161821 guifg=#84a0c6
+  hi TSFloat guibg=#161821 guifg=#84a0c6
   hi TSException gui=bold guibg=#161821 guifg=#84a0c6
   hi TSKeywordOperator gui=bold guibg=#161821 guifg=#84a0c6
   hi TSString guibg=#161821 guifg=#b4be82
@@ -335,6 +334,7 @@ else
   hi TSTag guibg=#161821 guifg=#a093c7
   hi TSVariableBuiltin guibg=#161821 guifg=#a093c7
   hi TSAttribute guibg=#161821 guifg=#a093c7
+  hi TSConstant guibg=#161821 guifg=#a093c7
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'

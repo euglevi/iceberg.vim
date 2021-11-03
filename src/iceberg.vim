@@ -603,7 +603,7 @@ function! s:create_colors(palette) abort
 
   " Treesitter
   call extend(rules, pgmnt#hi#group(
-        \ ['TSAnnotation', 'TSCharacter', 'TSConstMacro', 'TSConstant', 'TSEmphasis', 'TSError', 'TSField', 'TSFloat', 'TSFuncMacro', 'TSLabel', 'TSLiteral', 'TSNamespace', 'TSNone', 'TSPunctDelimiter', 'TSPunctSpecial', 'TSRepeat', 'TSStringRegex', 'TSStrong', 'TSStructure', 'TSText', 'TSTypeBuiltIn', 'TSURI', 'TSUnderline', ], {
+        \ ['TSAnnotation', 'TSCharacter', 'TSConstMacro', 'TSEmphasis', 'TSError', 'TSFuncMacro', 'TSLabel', 'TSLiteral', 'TSNamespace', 'TSNone', 'TSPunctDelimiter', 'TSPunctSpecial', 'TSRepeat', 'TSStringRegex', 'TSStrong', 'TSStructure', 'TSText', 'TSTypeBuiltIn', 'TSURI', 'TSUnderline','TSVariable' ], {
         \   'guifg': g.normal_fg,
         \   'guibg': g.normal_bg,
         \ }))
@@ -618,7 +618,7 @@ function! s:create_colors(palette) abort
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSConstBuiltin', 'TSInclude', 'TSKeyword', 'TSParameter', 'TSParameterReference', 'TSVariable'], {
+        \ ['TSConstBuiltin', 'TSInclude', 'TSKeyword', 'TSParameter', 'TSParameterReference','TSField', 'TSFloat'], {
 	\   'guifg': g.blue,
 	\   'guibg': g.normal_bg,
 	\ }))
@@ -634,7 +634,7 @@ function! s:create_colors(palette) abort
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSProperty', 'TSTag', 'TSVariableBuiltin', 'TSAttribute'], {
+        \ ['TSProperty', 'TSTag', 'TSVariableBuiltin', 'TSAttribute', 'TSConstant'], {
 	\   'guifg': g.purple,
 	\   'guibg': g.normal_bg,
 	\ }))
