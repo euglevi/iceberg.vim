@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-03 22:08+0100
+" Modified:   2021-11-03 22:11+0100
 " License:    MIT
 
 
@@ -145,7 +145,6 @@ if &background == 'light'
   hi TSBoolean guibg=#e8e9ec guifg=#c57339
   hi TSConstructor guibg=#e8e9ec guifg=#c57339
   hi TSNumber guibg=#e8e9ec guifg=#c57339
-  hi TSOperator guibg=#e8e9ec guifg=#c57339
   hi TSType guibg=#e8e9ec guifg=#c57339
   hi TSConditional guibg=#e8e9ec guifg=#3f83a6
   hi TSFuncBuiltin guibg=#e8e9ec guifg=#3f83a6
@@ -167,6 +166,7 @@ if &background == 'light'
   hi TSVariableBuiltin guibg=#e8e9ec guifg=#7759b4
   hi TSAttribute guibg=#e8e9ec guifg=#7759b4
   hi TSConstant guibg=#e8e9ec guifg=#7759b4
+  hi TSOperator guibg=#e8e9ec guifg=#7759b4
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -313,7 +313,6 @@ else
   hi TSBoolean guibg=#161821 guifg=#e2a478
   hi TSConstructor guibg=#161821 guifg=#e2a478
   hi TSNumber guibg=#161821 guifg=#e2a478
-  hi TSOperator guibg=#161821 guifg=#e2a478
   hi TSType guibg=#161821 guifg=#e2a478
   hi TSConditional guibg=#161821 guifg=#89b8c2
   hi TSFuncBuiltin guibg=#161821 guifg=#89b8c2
@@ -335,6 +334,7 @@ else
   hi TSVariableBuiltin guibg=#161821 guifg=#a093c7
   hi TSAttribute guibg=#161821 guifg=#a093c7
   hi TSConstant guibg=#161821 guifg=#a093c7
+  hi TSOperator guibg=#161821 guifg=#a093c7
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'
