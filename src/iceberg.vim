@@ -608,7 +608,7 @@ function! s:create_colors(palette) abort
         \   'guibg': g.normal_bg,
         \ }))
   call extend(rules, pgmnt#hi#group(
-	\ ['TSBoolean', 'TSConstructor', 'TSNumber', 'TSOperator', 'TSType'], {
+	\ ['TSBoolean', 'TSConstructor', 'TSNumber', 'TSType'], {
 	\   'guifg': g.orange,
 	\   'guibg': g.normal_bg,
 	\ }))
@@ -634,7 +634,7 @@ function! s:create_colors(palette) abort
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSProperty', 'TSTag', 'TSVariableBuiltin', 'TSAttribute', 'TSConstant'], {
+        \ ['TSProperty', 'TSTag', 'TSVariableBuiltin', 'TSAttribute', 'TSConstant', 'TSOperator'], {
 	\   'guifg': g.purple,
 	\   'guibg': g.normal_bg,
 	\ }))
