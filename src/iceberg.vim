@@ -627,7 +627,7 @@ function! s:create_colors(palette) abort
         \ }))
   call extend(rules, pgmnt#hi#group(
 	\ ['TSBoolean', 'TSNumber', 'TSConstBuiltin', 'TSConstMacro', 'TSWarning'], {
-	\   'guifg': g.orange,
+	\   'guifg': g.purple,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
@@ -637,7 +637,7 @@ function! s:create_colors(palette) abort
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSFuncBuiltin', 'TSFunction', 'TSFuncMacro', 'TSMethod', 'TSInclude', 'TSTagDelimiter', 'TSNote'], {
-	\   'guifg': g.lblue,
+	\   'guifg': g.orange,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
@@ -649,16 +649,16 @@ function! s:create_colors(palette) abort
         \ ['TSKeywordOperator', 'TSKeywordFunction', 'TSKeywordReturn'], {
 	\   'guifg': g.blue,
 	\   'guibg': g.normal_bg,
-	\   'gui': 'bold',
+	\   'gui': 'italic',
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSString', 'TSStringRegex', 'TSStringSpecial', 'TSURI', 'TSTextReference'], {
-	\   'guifg': g.green,
+	\   'guifg': g.lblue,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSTag', 'TSVariableBuiltin', 'TSAttribute', 'TSConstant', 'TSOperator', 'TSStringEscape', 'TSSymbol', 'TSMath'], {
-	\   'guifg': g.purple,
+	\   'guifg': g.lblue,
 	\   'guibg': g.normal_bg,
 	\ }))
   " }}}
