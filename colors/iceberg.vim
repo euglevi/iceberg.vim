@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-04 19:49+0100
+" Modified:   2021-11-04 19:55+0100
 " License:    MIT
 
 
@@ -155,9 +155,6 @@ if &background == 'light'
   hi TSKeyword guibg=#e8e9ec guifg=#2d539e
   hi TSParameter guibg=#e8e9ec guifg=#2d539e
   hi TSParameterReference guibg=#e8e9ec guifg=#2d539e
-  hi TSField guibg=#e8e9ec guifg=#2d539e
-  hi TSProperty guibg=#e8e9ec guifg=#2d539e
-  hi TSFloat guibg=#e8e9ec guifg=#2d539e
   hi TSConstructor guibg=#e8e9ec guifg=#2d539e
   hi TSTagAttribute guibg=#e8e9ec guifg=#2d539e
   hi TSTitle guibg=#e8e9ec guifg=#2d539e
@@ -168,6 +165,9 @@ if &background == 'light'
   hi TSKeywordOperator gui=italic guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordFunction gui=italic guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordReturn gui=italic guibg=#e8e9ec guifg=#2d539e
+  hi TSField guibg=#e8e9ec guifg=#668e3d
+  hi TSProperty guibg=#e8e9ec guifg=#668e3d
+  hi TSFloat guibg=#e8e9ec guifg=#668e3d
   hi TSString guibg=#e8e9ec guifg=#3f83a6
   hi TSStringRegex guibg=#e8e9ec guifg=#3f83a6
   hi TSStringSpecial guibg=#e8e9ec guifg=#3f83a6
@@ -337,9 +337,6 @@ else
   hi TSKeyword guibg=#161821 guifg=#84a0c6
   hi TSParameter guibg=#161821 guifg=#84a0c6
   hi TSParameterReference guibg=#161821 guifg=#84a0c6
-  hi TSField guibg=#161821 guifg=#84a0c6
-  hi TSProperty guibg=#161821 guifg=#84a0c6
-  hi TSFloat guibg=#161821 guifg=#84a0c6
   hi TSConstructor guibg=#161821 guifg=#84a0c6
   hi TSTagAttribute guibg=#161821 guifg=#84a0c6
   hi TSTitle guibg=#161821 guifg=#84a0c6
@@ -350,6 +347,9 @@ else
   hi TSKeywordOperator gui=italic guibg=#161821 guifg=#84a0c6
   hi TSKeywordFunction gui=italic guibg=#161821 guifg=#84a0c6
   hi TSKeywordReturn gui=italic guibg=#161821 guifg=#84a0c6
+  hi TSField guibg=#161821 guifg=#b4be82
+  hi TSProperty guibg=#161821 guifg=#b4be82
+  hi TSFloat guibg=#161821 guifg=#b4be82
   hi TSString guibg=#161821 guifg=#89b8c2
   hi TSStringRegex guibg=#161821 guifg=#89b8c2
   hi TSStringSpecial guibg=#161821 guifg=#89b8c2
