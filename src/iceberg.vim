@@ -653,7 +653,7 @@ function! s:create_colors(palette) abort
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSField', 'TSProperty', 'TSFloat'], {
-	\   'guifg': g.green,
+	\   'guifg': g.blue_tint_fg,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
