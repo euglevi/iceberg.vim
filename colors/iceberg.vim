@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-04 20:05+0100
+" Modified:   2021-11-04 20:11+0100
 " License:    MIT
 
 
@@ -165,9 +165,9 @@ if &background == 'light'
   hi TSKeywordOperator gui=italic guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordFunction gui=italic guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordReturn gui=italic guibg=#e8e9ec guifg=#2d539e
-  hi TSField guibg=#e8e9ec guifg=#dcdfe7
-  hi TSProperty guibg=#e8e9ec guifg=#dcdfe7
-  hi TSFloat guibg=#e8e9ec guifg=#dcdfe7
+  hi TSField guibg=#e8e9ec guifg=#2d539e
+  hi TSProperty guibg=#e8e9ec guifg=#2d539e
+  hi TSFloat guibg=#e8e9ec guifg=#2d539e
   hi TSString guibg=#e8e9ec guifg=#3f83a6
   hi TSStringRegex guibg=#e8e9ec guifg=#3f83a6
   hi TSStringSpecial guibg=#e8e9ec guifg=#3f83a6
@@ -347,9 +347,9 @@ else
   hi TSKeywordOperator gui=italic guibg=#161821 guifg=#84a0c6
   hi TSKeywordFunction gui=italic guibg=#161821 guifg=#84a0c6
   hi TSKeywordReturn gui=italic guibg=#161821 guifg=#84a0c6
-  hi TSField guibg=#161821 guifg=#1e2132
-  hi TSProperty guibg=#161821 guifg=#1e2132
-  hi TSFloat guibg=#161821 guifg=#1e2132
+  hi TSField guibg=#161821 guifg=#84a0c6
+  hi TSProperty guibg=#161821 guifg=#84a0c6
+  hi TSFloat guibg=#161821 guifg=#84a0c6
   hi TSString guibg=#161821 guifg=#89b8c2
   hi TSStringRegex guibg=#161821 guifg=#89b8c2
   hi TSStringSpecial guibg=#161821 guifg=#89b8c2
