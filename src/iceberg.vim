@@ -637,7 +637,7 @@ function! s:create_colors(palette) abort
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSFunction', 'TSInclude', 'TSTagDelimiter', 'TSNote'], {
-	\   'guifg': g.orange,
+	\   'guifg': g.lblue,
 	\   'guibg': g.normal_bg,
 	\   'gui': 'bold',
 	\ }))
