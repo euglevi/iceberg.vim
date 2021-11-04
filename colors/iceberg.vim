@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-04 20:11+0100
+" Modified:   2021-11-04 21:49+0100
 " License:    MIT
 
 
@@ -149,9 +149,6 @@ if &background == 'light'
   hi TSFuncBuiltin guibg=#e8e9ec guifg=#2d539e
   hi TSMethod guibg=#e8e9ec guifg=#2d539e
   hi TSFuncMacro guibg=#e8e9ec guifg=#2d539e
-  hi TSException guibg=#e8e9ec guifg=#2d539e
-  hi TSConditional guibg=#e8e9ec guifg=#2d539e
-  hi TSRepeat guibg=#e8e9ec guifg=#2d539e
   hi TSKeyword guibg=#e8e9ec guifg=#2d539e
   hi TSParameter guibg=#e8e9ec guifg=#2d539e
   hi TSParameterReference guibg=#e8e9ec guifg=#2d539e
@@ -162,17 +159,20 @@ if &background == 'light'
   hi TSEnvironmentName guibg=#e8e9ec guifg=#2d539e
   hi TSType guibg=#e8e9ec guifg=#2d539e
   hi TSTypeBuiltIn guibg=#e8e9ec guifg=#2d539e
+  hi TSException guibg=#e8e9ec guifg=#668e3d
+  hi TSConditional guibg=#e8e9ec guifg=#668e3d
+  hi TSRepeat guibg=#e8e9ec guifg=#668e3d
   hi TSKeywordOperator gui=italic guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordFunction gui=italic guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordReturn gui=italic guibg=#e8e9ec guifg=#2d539e
   hi TSField guibg=#e8e9ec guifg=#2d539e
   hi TSProperty guibg=#e8e9ec guifg=#2d539e
   hi TSFloat guibg=#e8e9ec guifg=#2d539e
-  hi TSString guibg=#e8e9ec guifg=#3f83a6
-  hi TSStringRegex guibg=#e8e9ec guifg=#3f83a6
-  hi TSStringSpecial guibg=#e8e9ec guifg=#3f83a6
-  hi TSURI guibg=#e8e9ec guifg=#3f83a6
-  hi TSTextReference guibg=#e8e9ec guifg=#3f83a6
+  hi TSString guibg=#e8e9ec guifg=#c57339
+  hi TSStringRegex guibg=#e8e9ec guifg=#c57339
+  hi TSStringSpecial guibg=#e8e9ec guifg=#c57339
+  hi TSURI guibg=#e8e9ec guifg=#c57339
+  hi TSTextReference guibg=#e8e9ec guifg=#c57339
   hi TSTag guibg=#e8e9ec guifg=#3f83a6
   hi TSVariableBuiltin guibg=#e8e9ec guifg=#3f83a6
   hi TSAttribute guibg=#e8e9ec guifg=#3f83a6
@@ -331,9 +331,6 @@ else
   hi TSFuncBuiltin guibg=#161821 guifg=#84a0c6
   hi TSMethod guibg=#161821 guifg=#84a0c6
   hi TSFuncMacro guibg=#161821 guifg=#84a0c6
-  hi TSException guibg=#161821 guifg=#84a0c6
-  hi TSConditional guibg=#161821 guifg=#84a0c6
-  hi TSRepeat guibg=#161821 guifg=#84a0c6
   hi TSKeyword guibg=#161821 guifg=#84a0c6
   hi TSParameter guibg=#161821 guifg=#84a0c6
   hi TSParameterReference guibg=#161821 guifg=#84a0c6
@@ -344,17 +341,20 @@ else
   hi TSEnvironmentName guibg=#161821 guifg=#84a0c6
   hi TSType guibg=#161821 guifg=#84a0c6
   hi TSTypeBuiltIn guibg=#161821 guifg=#84a0c6
+  hi TSException guibg=#161821 guifg=#b4be82
+  hi TSConditional guibg=#161821 guifg=#b4be82
+  hi TSRepeat guibg=#161821 guifg=#b4be82
   hi TSKeywordOperator gui=italic guibg=#161821 guifg=#84a0c6
   hi TSKeywordFunction gui=italic guibg=#161821 guifg=#84a0c6
   hi TSKeywordReturn gui=italic guibg=#161821 guifg=#84a0c6
   hi TSField guibg=#161821 guifg=#84a0c6
   hi TSProperty guibg=#161821 guifg=#84a0c6
   hi TSFloat guibg=#161821 guifg=#84a0c6
-  hi TSString guibg=#161821 guifg=#89b8c2
-  hi TSStringRegex guibg=#161821 guifg=#89b8c2
-  hi TSStringSpecial guibg=#161821 guifg=#89b8c2
-  hi TSURI guibg=#161821 guifg=#89b8c2
-  hi TSTextReference guibg=#161821 guifg=#89b8c2
+  hi TSString guibg=#161821 guifg=#e2a478
+  hi TSStringRegex guibg=#161821 guifg=#e2a478
+  hi TSStringSpecial guibg=#161821 guifg=#e2a478
+  hi TSURI guibg=#161821 guifg=#e2a478
+  hi TSTextReference guibg=#161821 guifg=#e2a478
   hi TSTag guibg=#161821 guifg=#89b8c2
   hi TSVariableBuiltin guibg=#161821 guifg=#89b8c2
   hi TSAttribute guibg=#161821 guifg=#89b8c2

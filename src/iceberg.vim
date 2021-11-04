@@ -641,8 +641,13 @@ function! s:create_colors(palette) abort
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSFuncBuiltin', 'TSMethod', 'TSFuncMacro', 'TSException', 'TSConditional', 'TSRepeat', 'TSKeyword', 'TSParameter', 'TSParameterReference', 'TSConstructor', 'TSTagAttribute', 'TSTitle', 'TSEnvironment', 'TSEnvironmentName', 'TSType', 'TSTypeBuiltIn'], {
+        \ ['TSFuncBuiltin', 'TSMethod', 'TSFuncMacro', 'TSKeyword', 'TSParameter', 'TSParameterReference', 'TSConstructor', 'TSTagAttribute', 'TSTitle', 'TSEnvironment', 'TSEnvironmentName', 'TSType', 'TSTypeBuiltIn'], {
 	\   'guifg': g.blue,
+	\   'guibg': g.normal_bg,
+	\ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSException', 'TSConditional', 'TSRepeat'], {
+	\   'guifg': g.green,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
@@ -658,7 +663,7 @@ function! s:create_colors(palette) abort
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSString', 'TSStringRegex', 'TSStringSpecial', 'TSURI', 'TSTextReference'], {
-	\   'guifg': g.lblue,
+	\   'guifg': g.orange,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
