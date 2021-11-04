@@ -639,7 +639,6 @@ function! s:create_colors(palette) abort
         \ ['TSFunction', 'TSInclude', 'TSTagDelimiter', 'TSNote'], {
 	\   'guifg': g.lblue,
 	\   'guibg': g.normal_bg,
-	\   'gui': 'bold',
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSFuncBuiltin', 'TSMethod', 'TSFuncMacro', 'TSKeyword', 'TSParameter', 'TSParameterReference', 'TSConstructor', 'TSTagAttribute', 'TSTitle', 'TSEnvironment', 'TSEnvironmentName', 'TSType', 'TSTypeBuiltIn'], {
