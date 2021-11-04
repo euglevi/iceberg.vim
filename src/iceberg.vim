@@ -636,12 +636,12 @@ function! s:create_colors(palette) abort
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSFuncBuiltin', 'TSFunction', 'TSFuncMacro', 'TSMethod', 'TSInclude', 'TSTagDelimiter', 'TSNote'], {
+        \ ['TSFunction', 'TSInclude', 'TSTagDelimiter', 'TSNote'], {
 	\   'guifg': g.orange,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSException', 'TSConditional', 'TSRepeat', 'TSKeyword', 'TSParameter', 'TSParameterReference','TSField', 'TSProperty', 'TSFloat', 'TSConstructor', 'TSTagAttribute', 'TSTitle', 'TSEnvironment', 'TSEnvironmentName', 'TSType', 'TSTypeBuiltIn'], {
+        \ ['TSFuncBuiltin', 'TSMethod', 'TSFuncMacro', 'TSException', 'TSConditional', 'TSRepeat', 'TSKeyword', 'TSParameter', 'TSParameterReference','TSField', 'TSProperty', 'TSFloat', 'TSConstructor', 'TSTagAttribute', 'TSTitle', 'TSEnvironment', 'TSEnvironmentName', 'TSType', 'TSTypeBuiltIn'], {
 	\   'guifg': g.blue,
 	\   'guibg': g.normal_bg,
 	\ }))

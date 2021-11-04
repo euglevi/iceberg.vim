@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-04 19:45+0100
+" Modified:   2021-11-04 19:49+0100
 " License:    MIT
 
 
@@ -142,13 +142,13 @@ if &background == 'light'
   hi TSConstMacro guibg=#e8e9ec guifg=#7759b4
   hi TSWarning guibg=#e8e9ec guifg=#7759b4
   hi TSDanger guibg=#e8e9ec guifg=#cc517a
-  hi TSFuncBuiltin guibg=#e8e9ec guifg=#c57339
   hi TSFunction guibg=#e8e9ec guifg=#c57339
-  hi TSFuncMacro guibg=#e8e9ec guifg=#c57339
-  hi TSMethod guibg=#e8e9ec guifg=#c57339
   hi TSInclude guibg=#e8e9ec guifg=#c57339
   hi TSTagDelimiter guibg=#e8e9ec guifg=#c57339
   hi TSNote guibg=#e8e9ec guifg=#c57339
+  hi TSFuncBuiltin guibg=#e8e9ec guifg=#2d539e
+  hi TSMethod guibg=#e8e9ec guifg=#2d539e
+  hi TSFuncMacro guibg=#e8e9ec guifg=#2d539e
   hi TSException guibg=#e8e9ec guifg=#2d539e
   hi TSConditional guibg=#e8e9ec guifg=#2d539e
   hi TSRepeat guibg=#e8e9ec guifg=#2d539e
@@ -324,13 +324,13 @@ else
   hi TSConstMacro guibg=#161821 guifg=#a093c7
   hi TSWarning guibg=#161821 guifg=#a093c7
   hi TSDanger guibg=#161821 guifg=#e27878
-  hi TSFuncBuiltin guibg=#161821 guifg=#e2a478
   hi TSFunction guibg=#161821 guifg=#e2a478
-  hi TSFuncMacro guibg=#161821 guifg=#e2a478
-  hi TSMethod guibg=#161821 guifg=#e2a478
   hi TSInclude guibg=#161821 guifg=#e2a478
   hi TSTagDelimiter guibg=#161821 guifg=#e2a478
   hi TSNote guibg=#161821 guifg=#e2a478
+  hi TSFuncBuiltin guibg=#161821 guifg=#84a0c6
+  hi TSMethod guibg=#161821 guifg=#84a0c6
+  hi TSFuncMacro guibg=#161821 guifg=#84a0c6
   hi TSException guibg=#161821 guifg=#84a0c6
   hi TSConditional guibg=#161821 guifg=#84a0c6
   hi TSRepeat guibg=#161821 guifg=#84a0c6
