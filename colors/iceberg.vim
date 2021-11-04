@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-03 22:11+0100
+" Modified:   2021-11-04 19:38+0100
 " License:    MIT
 
 
@@ -123,50 +123,64 @@ if &background == 'light'
   hi LspDiagnosticsUnderlineError cterm=underline ctermfg=125 gui=underline guifg=#cc517a term=underline
   hi TSAnnotation guibg=#e8e9ec guifg=#33374c
   hi TSCharacter guibg=#e8e9ec guifg=#33374c
-  hi TSConstMacro guibg=#e8e9ec guifg=#33374c
-  hi TSEmphasis guibg=#e8e9ec guifg=#33374c
   hi TSError guibg=#e8e9ec guifg=#33374c
-  hi TSFuncMacro guibg=#e8e9ec guifg=#33374c
   hi TSLabel guibg=#e8e9ec guifg=#33374c
   hi TSLiteral guibg=#e8e9ec guifg=#33374c
   hi TSNamespace guibg=#e8e9ec guifg=#33374c
-  hi TSNone guibg=#e8e9ec guifg=#33374c
   hi TSPunctDelimiter guibg=#e8e9ec guifg=#33374c
+  hi TSPunctBracket guibg=#e8e9ec guifg=#33374c
   hi TSPunctSpecial guibg=#e8e9ec guifg=#33374c
-  hi TSRepeat guibg=#e8e9ec guifg=#33374c
-  hi TSStringRegex guibg=#e8e9ec guifg=#33374c
-  hi TSStrong guibg=#e8e9ec guifg=#33374c
   hi TSStructure guibg=#e8e9ec guifg=#33374c
   hi TSText guibg=#e8e9ec guifg=#33374c
-  hi TSTypeBuiltIn guibg=#e8e9ec guifg=#33374c
-  hi TSURI guibg=#e8e9ec guifg=#33374c
-  hi TSUnderline guibg=#e8e9ec guifg=#33374c
   hi TSVariable guibg=#e8e9ec guifg=#33374c
+  hi TSStrong gui=bold guibg=#e8e9ec guifg=#33374c
+  hi TSUnderline gui=underline guibg=#e8e9ec guifg=#33374c
+  hi TSEmphasis gui=italic guibg=#e8e9ec guifg=#33374c
   hi TSBoolean guibg=#e8e9ec guifg=#c57339
-  hi TSConstructor guibg=#e8e9ec guifg=#c57339
   hi TSNumber guibg=#e8e9ec guifg=#c57339
-  hi TSType guibg=#e8e9ec guifg=#c57339
-  hi TSConditional guibg=#e8e9ec guifg=#3f83a6
+  hi TSConstBuiltin guibg=#e8e9ec guifg=#c57339
+  hi TSConstMacro guibg=#e8e9ec guifg=#c57339
+  hi TSWarning guibg=#e8e9ec guifg=#c57339
+  hi TSDanger guibg=#e8e9ec guifg=#cc517a
   hi TSFuncBuiltin guibg=#e8e9ec guifg=#3f83a6
-  hi TSStringEscape guibg=#e8e9ec guifg=#3f83a6
   hi TSFunction guibg=#e8e9ec guifg=#3f83a6
+  hi TSFuncMacro guibg=#e8e9ec guifg=#3f83a6
   hi TSMethod guibg=#e8e9ec guifg=#3f83a6
-  hi TSConstBuiltin guibg=#e8e9ec guifg=#2d539e
-  hi TSInclude guibg=#e8e9ec guifg=#2d539e
+  hi TSInclude guibg=#e8e9ec guifg=#3f83a6
+  hi TSTagDelimiter guibg=#e8e9ec guifg=#3f83a6
+  hi TSNote guibg=#e8e9ec guifg=#3f83a6
+  hi TSException guibg=#e8e9ec guifg=#2d539e
+  hi TSConditional guibg=#e8e9ec guifg=#2d539e
+  hi TSRepeat guibg=#e8e9ec guifg=#2d539e
   hi TSKeyword guibg=#e8e9ec guifg=#2d539e
   hi TSParameter guibg=#e8e9ec guifg=#2d539e
   hi TSParameterReference guibg=#e8e9ec guifg=#2d539e
   hi TSField guibg=#e8e9ec guifg=#2d539e
+  hi TSProperty guibg=#e8e9ec guifg=#2d539e
   hi TSFloat guibg=#e8e9ec guifg=#2d539e
-  hi TSException gui=bold guibg=#e8e9ec guifg=#2d539e
+  hi TSConstructor guibg=#e8e9ec guifg=#2d539e
+  hi TSTagAttribute guibg=#e8e9ec guifg=#2d539e
+  hi TSTitle guibg=#e8e9ec guifg=#2d539e
+  hi TSEnvironment guibg=#e8e9ec guifg=#2d539e
+  hi TSEnvironmentName guibg=#e8e9ec guifg=#2d539e
+  hi TSType guibg=#e8e9ec guifg=#2d539e
+  hi TSTypeBuiltIn guibg=#e8e9ec guifg=#2d539e
   hi TSKeywordOperator gui=bold guibg=#e8e9ec guifg=#2d539e
+  hi TSKeywordFunction gui=bold guibg=#e8e9ec guifg=#2d539e
+  hi TSKeywordReturn gui=bold guibg=#e8e9ec guifg=#2d539e
   hi TSString guibg=#e8e9ec guifg=#668e3d
-  hi TSProperty guibg=#e8e9ec guifg=#7759b4
+  hi TSStringRegex guibg=#e8e9ec guifg=#668e3d
+  hi TSStringSpecial guibg=#e8e9ec guifg=#668e3d
+  hi TSURI guibg=#e8e9ec guifg=#668e3d
+  hi TSTextReference guibg=#e8e9ec guifg=#668e3d
   hi TSTag guibg=#e8e9ec guifg=#7759b4
   hi TSVariableBuiltin guibg=#e8e9ec guifg=#7759b4
   hi TSAttribute guibg=#e8e9ec guifg=#7759b4
   hi TSConstant guibg=#e8e9ec guifg=#7759b4
   hi TSOperator guibg=#e8e9ec guifg=#7759b4
+  hi TSStringEscape guibg=#e8e9ec guifg=#7759b4
+  hi TSSymbol guibg=#e8e9ec guifg=#7759b4
+  hi TSMath guibg=#e8e9ec guifg=#7759b4
 
   if has('nvim')
     let g:terminal_color_0 = '#dcdfe7'
@@ -291,50 +305,64 @@ else
   hi LspDiagnosticsUnderlineError cterm=underline ctermfg=203 gui=underline guifg=#e27878 term=underline
   hi TSAnnotation guibg=#161821 guifg=#c6c8d1
   hi TSCharacter guibg=#161821 guifg=#c6c8d1
-  hi TSConstMacro guibg=#161821 guifg=#c6c8d1
-  hi TSEmphasis guibg=#161821 guifg=#c6c8d1
   hi TSError guibg=#161821 guifg=#c6c8d1
-  hi TSFuncMacro guibg=#161821 guifg=#c6c8d1
   hi TSLabel guibg=#161821 guifg=#c6c8d1
   hi TSLiteral guibg=#161821 guifg=#c6c8d1
   hi TSNamespace guibg=#161821 guifg=#c6c8d1
-  hi TSNone guibg=#161821 guifg=#c6c8d1
   hi TSPunctDelimiter guibg=#161821 guifg=#c6c8d1
+  hi TSPunctBracket guibg=#161821 guifg=#c6c8d1
   hi TSPunctSpecial guibg=#161821 guifg=#c6c8d1
-  hi TSRepeat guibg=#161821 guifg=#c6c8d1
-  hi TSStringRegex guibg=#161821 guifg=#c6c8d1
-  hi TSStrong guibg=#161821 guifg=#c6c8d1
   hi TSStructure guibg=#161821 guifg=#c6c8d1
   hi TSText guibg=#161821 guifg=#c6c8d1
-  hi TSTypeBuiltIn guibg=#161821 guifg=#c6c8d1
-  hi TSURI guibg=#161821 guifg=#c6c8d1
-  hi TSUnderline guibg=#161821 guifg=#c6c8d1
   hi TSVariable guibg=#161821 guifg=#c6c8d1
+  hi TSStrong gui=bold guibg=#161821 guifg=#c6c8d1
+  hi TSUnderline gui=underline guibg=#161821 guifg=#c6c8d1
+  hi TSEmphasis gui=italic guibg=#161821 guifg=#c6c8d1
   hi TSBoolean guibg=#161821 guifg=#e2a478
-  hi TSConstructor guibg=#161821 guifg=#e2a478
   hi TSNumber guibg=#161821 guifg=#e2a478
-  hi TSType guibg=#161821 guifg=#e2a478
-  hi TSConditional guibg=#161821 guifg=#89b8c2
+  hi TSConstBuiltin guibg=#161821 guifg=#e2a478
+  hi TSConstMacro guibg=#161821 guifg=#e2a478
+  hi TSWarning guibg=#161821 guifg=#e2a478
+  hi TSDanger guibg=#161821 guifg=#e27878
   hi TSFuncBuiltin guibg=#161821 guifg=#89b8c2
-  hi TSStringEscape guibg=#161821 guifg=#89b8c2
   hi TSFunction guibg=#161821 guifg=#89b8c2
+  hi TSFuncMacro guibg=#161821 guifg=#89b8c2
   hi TSMethod guibg=#161821 guifg=#89b8c2
-  hi TSConstBuiltin guibg=#161821 guifg=#84a0c6
-  hi TSInclude guibg=#161821 guifg=#84a0c6
+  hi TSInclude guibg=#161821 guifg=#89b8c2
+  hi TSTagDelimiter guibg=#161821 guifg=#89b8c2
+  hi TSNote guibg=#161821 guifg=#89b8c2
+  hi TSException guibg=#161821 guifg=#84a0c6
+  hi TSConditional guibg=#161821 guifg=#84a0c6
+  hi TSRepeat guibg=#161821 guifg=#84a0c6
   hi TSKeyword guibg=#161821 guifg=#84a0c6
   hi TSParameter guibg=#161821 guifg=#84a0c6
   hi TSParameterReference guibg=#161821 guifg=#84a0c6
   hi TSField guibg=#161821 guifg=#84a0c6
+  hi TSProperty guibg=#161821 guifg=#84a0c6
   hi TSFloat guibg=#161821 guifg=#84a0c6
-  hi TSException gui=bold guibg=#161821 guifg=#84a0c6
+  hi TSConstructor guibg=#161821 guifg=#84a0c6
+  hi TSTagAttribute guibg=#161821 guifg=#84a0c6
+  hi TSTitle guibg=#161821 guifg=#84a0c6
+  hi TSEnvironment guibg=#161821 guifg=#84a0c6
+  hi TSEnvironmentName guibg=#161821 guifg=#84a0c6
+  hi TSType guibg=#161821 guifg=#84a0c6
+  hi TSTypeBuiltIn guibg=#161821 guifg=#84a0c6
   hi TSKeywordOperator gui=bold guibg=#161821 guifg=#84a0c6
+  hi TSKeywordFunction gui=bold guibg=#161821 guifg=#84a0c6
+  hi TSKeywordReturn gui=bold guibg=#161821 guifg=#84a0c6
   hi TSString guibg=#161821 guifg=#b4be82
-  hi TSProperty guibg=#161821 guifg=#a093c7
+  hi TSStringRegex guibg=#161821 guifg=#b4be82
+  hi TSStringSpecial guibg=#161821 guifg=#b4be82
+  hi TSURI guibg=#161821 guifg=#b4be82
+  hi TSTextReference guibg=#161821 guifg=#b4be82
   hi TSTag guibg=#161821 guifg=#a093c7
   hi TSVariableBuiltin guibg=#161821 guifg=#a093c7
   hi TSAttribute guibg=#161821 guifg=#a093c7
   hi TSConstant guibg=#161821 guifg=#a093c7
   hi TSOperator guibg=#161821 guifg=#a093c7
+  hi TSStringEscape guibg=#161821 guifg=#a093c7
+  hi TSSymbol guibg=#161821 guifg=#a093c7
+  hi TSMath guibg=#161821 guifg=#a093c7
 
   if has('nvim')
     let g:terminal_color_0 = '#1e2132'

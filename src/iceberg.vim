@@ -603,38 +603,61 @@ function! s:create_colors(palette) abort
 
   " Treesitter
   call extend(rules, pgmnt#hi#group(
-        \ ['TSAnnotation', 'TSCharacter', 'TSConstMacro', 'TSEmphasis', 'TSError', 'TSFuncMacro', 'TSLabel', 'TSLiteral', 'TSNamespace', 'TSNone', 'TSPunctDelimiter', 'TSPunctSpecial', 'TSRepeat', 'TSStringRegex', 'TSStrong', 'TSStructure', 'TSText', 'TSTypeBuiltIn', 'TSURI', 'TSUnderline','TSVariable' ], {
+        \ ['TSAnnotation', 'TSCharacter', 'TSError', 'TSLabel', 'TSLiteral', 'TSNamespace', 'TSPunctDelimiter', 'TSPunctBracket', 'TSPunctSpecial',   'TSStructure', 'TSText', 'TSVariable' ], {
         \   'guifg': g.normal_fg,
         \   'guibg': g.normal_bg,
         \ }))
   call extend(rules, pgmnt#hi#group(
-	\ ['TSBoolean', 'TSConstructor', 'TSNumber', 'TSType'], {
+        \ ['TSStrong'], {
+        \   'guifg': g.normal_fg,
+        \   'guibg': g.normal_bg,
+	\   'gui': 'bold',
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSUnderline'], {
+        \   'guifg': g.normal_fg,
+        \   'guibg': g.normal_bg,
+	\   'gui': 'underline',
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSEmphasis'], {
+        \   'guifg': g.normal_fg,
+        \   'guibg': g.normal_bg,
+	\   'gui': 'italic',
+        \ }))
+  call extend(rules, pgmnt#hi#group(
+	\ ['TSBoolean', 'TSNumber', 'TSConstBuiltin', 'TSConstMacro', 'TSWarning'], {
 	\   'guifg': g.orange,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSConditional', 'TSFuncBuiltin', 'TSStringEscape' ,'TSFunction', 'TSMethod'], {
+	\ ['TSDanger'], {
+	\   'guifg': g.red,
+	\   'guibg': g.normal_bg,
+	\ }))
+  call extend(rules, pgmnt#hi#group(
+        \ ['TSFuncBuiltin', 'TSFunction', 'TSFuncMacro', 'TSMethod', 'TSInclude', 'TSTagDelimiter', 'TSNote'], {
 	\   'guifg': g.lblue,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSConstBuiltin', 'TSInclude', 'TSKeyword', 'TSParameter', 'TSParameterReference','TSField', 'TSFloat'], {
+        \ ['TSException', 'TSConditional', 'TSRepeat', 'TSKeyword', 'TSParameter', 'TSParameterReference','TSField', 'TSProperty', 'TSFloat', 'TSConstructor', 'TSTagAttribute', 'TSTitle', 'TSEnvironment', 'TSEnvironmentName', 'TSType', 'TSTypeBuiltIn'], {
 	\   'guifg': g.blue,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSException', 'TSKeywordOperator' ], {
+        \ ['TSKeywordOperator', 'TSKeywordFunction', 'TSKeywordReturn'], {
 	\   'guifg': g.blue,
 	\   'guibg': g.normal_bg,
 	\   'gui': 'bold',
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSString'], {
+        \ ['TSString', 'TSStringRegex', 'TSStringSpecial', 'TSURI', 'TSTextReference'], {
 	\   'guifg': g.green,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSProperty', 'TSTag', 'TSVariableBuiltin', 'TSAttribute', 'TSConstant', 'TSOperator'], {
+        \ ['TSTag', 'TSVariableBuiltin', 'TSAttribute', 'TSConstant', 'TSOperator', 'TSStringEscape', 'TSSymbol', 'TSMath'], {
 	\   'guifg': g.purple,
 	\   'guibg': g.normal_bg,
 	\ }))
