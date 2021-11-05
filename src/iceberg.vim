@@ -637,7 +637,7 @@ function! s:create_colors(palette) abort
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSFunction', 'TSInclude', 'TSTagDelimiter', 'TSNote'], {
-	\   'guifg': g.lblue,
+	\   'guifg': g.orange,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
@@ -663,7 +663,7 @@ function! s:create_colors(palette) abort
 	\ }))
   call extend(rules, pgmnt#hi#group(
         \ ['TSString', 'TSStringRegex', 'TSStringSpecial', 'TSURI', 'TSTextReference'], {
-	\   'guifg': g.orange,
+	\   'guifg': g.lblue,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(

@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-04 22:00+0100
+" Modified:   2021-11-05 08:57+0100
 " License:    MIT
 
 
@@ -142,10 +142,10 @@ if &background == 'light'
   hi TSConstMacro guibg=#e8e9ec guifg=#7759b4
   hi TSWarning guibg=#e8e9ec guifg=#7759b4
   hi TSDanger guibg=#e8e9ec guifg=#cc517a
-  hi TSFunction guibg=#e8e9ec guifg=#3f83a6
-  hi TSInclude guibg=#e8e9ec guifg=#3f83a6
-  hi TSTagDelimiter guibg=#e8e9ec guifg=#3f83a6
-  hi TSNote guibg=#e8e9ec guifg=#3f83a6
+  hi TSFunction guibg=#e8e9ec guifg=#c57339
+  hi TSInclude guibg=#e8e9ec guifg=#c57339
+  hi TSTagDelimiter guibg=#e8e9ec guifg=#c57339
+  hi TSNote guibg=#e8e9ec guifg=#c57339
   hi TSFuncBuiltin guibg=#e8e9ec guifg=#2d539e
   hi TSMethod guibg=#e8e9ec guifg=#2d539e
   hi TSFuncMacro guibg=#e8e9ec guifg=#2d539e
@@ -168,11 +168,11 @@ if &background == 'light'
   hi TSField guibg=#e8e9ec guifg=#2d539e
   hi TSProperty guibg=#e8e9ec guifg=#2d539e
   hi TSFloat guibg=#e8e9ec guifg=#2d539e
-  hi TSString guibg=#e8e9ec guifg=#c57339
-  hi TSStringRegex guibg=#e8e9ec guifg=#c57339
-  hi TSStringSpecial guibg=#e8e9ec guifg=#c57339
-  hi TSURI guibg=#e8e9ec guifg=#c57339
-  hi TSTextReference guibg=#e8e9ec guifg=#c57339
+  hi TSString guibg=#e8e9ec guifg=#3f83a6
+  hi TSStringRegex guibg=#e8e9ec guifg=#3f83a6
+  hi TSStringSpecial guibg=#e8e9ec guifg=#3f83a6
+  hi TSURI guibg=#e8e9ec guifg=#3f83a6
+  hi TSTextReference guibg=#e8e9ec guifg=#3f83a6
   hi TSTag guibg=#e8e9ec guifg=#3f83a6
   hi TSVariableBuiltin guibg=#e8e9ec guifg=#3f83a6
   hi TSAttribute guibg=#e8e9ec guifg=#3f83a6
@@ -324,10 +324,10 @@ else
   hi TSConstMacro guibg=#161821 guifg=#a093c7
   hi TSWarning guibg=#161821 guifg=#a093c7
   hi TSDanger guibg=#161821 guifg=#e27878
-  hi TSFunction guibg=#161821 guifg=#89b8c2
-  hi TSInclude guibg=#161821 guifg=#89b8c2
-  hi TSTagDelimiter guibg=#161821 guifg=#89b8c2
-  hi TSNote guibg=#161821 guifg=#89b8c2
+  hi TSFunction guibg=#161821 guifg=#e2a478
+  hi TSInclude guibg=#161821 guifg=#e2a478
+  hi TSTagDelimiter guibg=#161821 guifg=#e2a478
+  hi TSNote guibg=#161821 guifg=#e2a478
   hi TSFuncBuiltin guibg=#161821 guifg=#84a0c6
   hi TSMethod guibg=#161821 guifg=#84a0c6
   hi TSFuncMacro guibg=#161821 guifg=#84a0c6
@@ -350,11 +350,11 @@ else
   hi TSField guibg=#161821 guifg=#84a0c6
   hi TSProperty guibg=#161821 guifg=#84a0c6
   hi TSFloat guibg=#161821 guifg=#84a0c6
-  hi TSString guibg=#161821 guifg=#e2a478
-  hi TSStringRegex guibg=#161821 guifg=#e2a478
-  hi TSStringSpecial guibg=#161821 guifg=#e2a478
-  hi TSURI guibg=#161821 guifg=#e2a478
-  hi TSTextReference guibg=#161821 guifg=#e2a478
+  hi TSString guibg=#161821 guifg=#89b8c2
+  hi TSStringRegex guibg=#161821 guifg=#89b8c2
+  hi TSStringSpecial guibg=#161821 guifg=#89b8c2
+  hi TSURI guibg=#161821 guifg=#89b8c2
+  hi TSTextReference guibg=#161821 guifg=#89b8c2
   hi TSTag guibg=#161821 guifg=#89b8c2
   hi TSVariableBuiltin guibg=#161821 guifg=#89b8c2
   hi TSAttribute guibg=#161821 guifg=#89b8c2
