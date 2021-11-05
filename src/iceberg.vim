@@ -626,7 +626,7 @@ function! s:create_colors(palette) abort
 	\   'gui': 'italic',
         \ }))
   call extend(rules, pgmnt#hi#group(
-	\ ['TSBoolean', 'TSNumber', 'TSConstBuiltin', 'TSConstMacro', 'TSWarning'], {
+	\ ['TSBoolean', 'TSNumber', 'TSConstBuiltin', 'TSConstMacro', 'TSWarning', 'TSTagAttribute'], {
 	\   'guifg': g.purple,
 	\   'guibg': g.normal_bg,
 	\ }))
@@ -636,12 +636,12 @@ function! s:create_colors(palette) abort
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSFunction', 'TSInclude', 'TSTagDelimiter', 'TSNote'], {
+        \ ['TSFunction', 'TSInclude', 'TSNote'], {
 	\   'guifg': g.orange,
 	\   'guibg': g.normal_bg,
 	\ }))
   call extend(rules, pgmnt#hi#group(
-        \ ['TSFuncBuiltin', 'TSMethod', 'TSFuncMacro', 'TSKeyword', 'TSParameter', 'TSParameterReference', 'TSConstructor', 'TSTagAttribute', 'TSTitle', 'TSEnvironment', 'TSEnvironmentName', 'TSType', 'TSTypeBuiltIn'], {
+        \ ['TSFuncBuiltin', 'TSMethod', 'TSFuncMacro', 'TSKeyword', 'TSParameter', 'TSParameterReference', 'TSConstructor', 'TSTagDelimiter', 'TSTitle', 'TSEnvironment', 'TSEnvironmentName', 'TSType', 'TSTypeBuiltIn'], {
 	\   'guifg': g.blue,
 	\   'guibg': g.normal_bg,
 	\ }))

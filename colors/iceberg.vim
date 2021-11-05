@@ -5,7 +5,7 @@
 "
 " File:       iceberg.vim
 " Maintainer: cocopon <cocopon@me.com>
-" Modified:   2021-11-05 08:57+0100
+" Modified:   2021-11-05 19:37+0100
 " License:    MIT
 
 
@@ -141,10 +141,10 @@ if &background == 'light'
   hi TSConstBuiltin guibg=#e8e9ec guifg=#7759b4
   hi TSConstMacro guibg=#e8e9ec guifg=#7759b4
   hi TSWarning guibg=#e8e9ec guifg=#7759b4
+  hi TSTagAttribute guibg=#e8e9ec guifg=#7759b4
   hi TSDanger guibg=#e8e9ec guifg=#cc517a
   hi TSFunction guibg=#e8e9ec guifg=#c57339
   hi TSInclude guibg=#e8e9ec guifg=#c57339
-  hi TSTagDelimiter guibg=#e8e9ec guifg=#c57339
   hi TSNote guibg=#e8e9ec guifg=#c57339
   hi TSFuncBuiltin guibg=#e8e9ec guifg=#2d539e
   hi TSMethod guibg=#e8e9ec guifg=#2d539e
@@ -153,7 +153,7 @@ if &background == 'light'
   hi TSParameter guibg=#e8e9ec guifg=#2d539e
   hi TSParameterReference guibg=#e8e9ec guifg=#2d539e
   hi TSConstructor guibg=#e8e9ec guifg=#2d539e
-  hi TSTagAttribute guibg=#e8e9ec guifg=#2d539e
+  hi TSTagDelimiter guibg=#e8e9ec guifg=#2d539e
   hi TSTitle guibg=#e8e9ec guifg=#2d539e
   hi TSEnvironment guibg=#e8e9ec guifg=#2d539e
   hi TSEnvironmentName guibg=#e8e9ec guifg=#2d539e
@@ -323,10 +323,10 @@ else
   hi TSConstBuiltin guibg=#161821 guifg=#a093c7
   hi TSConstMacro guibg=#161821 guifg=#a093c7
   hi TSWarning guibg=#161821 guifg=#a093c7
+  hi TSTagAttribute guibg=#161821 guifg=#a093c7
   hi TSDanger guibg=#161821 guifg=#e27878
   hi TSFunction guibg=#161821 guifg=#e2a478
   hi TSInclude guibg=#161821 guifg=#e2a478
-  hi TSTagDelimiter guibg=#161821 guifg=#e2a478
   hi TSNote guibg=#161821 guifg=#e2a478
   hi TSFuncBuiltin guibg=#161821 guifg=#84a0c6
   hi TSMethod guibg=#161821 guifg=#84a0c6
@@ -335,7 +335,7 @@ else
   hi TSParameter guibg=#161821 guifg=#84a0c6
   hi TSParameterReference guibg=#161821 guifg=#84a0c6
   hi TSConstructor guibg=#161821 guifg=#84a0c6
-  hi TSTagAttribute guibg=#161821 guifg=#84a0c6
+  hi TSTagDelimiter guibg=#161821 guifg=#84a0c6
   hi TSTitle guibg=#161821 guifg=#84a0c6
   hi TSEnvironment guibg=#161821 guifg=#84a0c6
   hi TSEnvironmentName guibg=#161821 guifg=#84a0c6
